@@ -1,0 +1,22 @@
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    Restricted Page
+{% endblock %}
+
+{% block style_block %}
+<style>
+    body{
+        background-color: rebeccapurple;
+        color: white;
+        font-size: 50px;
+    }
+    a {
+        color: white;
+    }
+</style>
+{% endblock %}
+{% block body_block %}
+    <marquee>Since you're logged in, you can see this text!</marquee>
+{% endblock %}
